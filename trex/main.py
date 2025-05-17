@@ -4,7 +4,6 @@ import pyautogui
 from skimage.measure import regionprops, label
 import cv2
 import mss
-import os
 
 wid = 40
 cnt, t = 0, 0.3
@@ -21,8 +20,6 @@ while True:
         time.sleep(1)
 
 
-output_folder = "output_images"
-os.makedirs(output_folder, exist_ok=True)
 
 p1 = location[0] + location[2] + 13
 p2 = location[1] + location[3] + 5
